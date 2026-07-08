@@ -1,0 +1,12 @@
+# Netlify config for the React (Vite) client.
+# Connect Netlify with "Base directory" = client, and it picks this up automatically.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA fallback: let React Router handle client-side routes.
+# Without this, refreshing on /login or /dashboard 404s on Netlify.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
