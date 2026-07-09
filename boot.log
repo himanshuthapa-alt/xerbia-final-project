@@ -1,0 +1,3 @@
+[api] listening on http://localhost:5000 (development)
+[0mGET /health [32m200[0m 2.152 ms - 75[0m
+[0mGET /api/employees [33m401[0m 5.493 ms - 50[0m
